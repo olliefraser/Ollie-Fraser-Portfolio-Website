@@ -2,14 +2,14 @@
   text-decoration: none;
 }
 
-/*CSS Reset*/
+/*CSS Reset====================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Root Colors*/
+/*Root Colors===========================*/
 :root {
     --dark_brown:#2D1313;
     --light_green: #AAC9A3;
@@ -18,7 +18,7 @@
     --dark_green: #59785B;
 }
 
-/*Navigation*/
+/*Navigation============================*/
 
 nav{
     text-decoration: none;
@@ -39,8 +39,11 @@ nav img{
   float: left;
 }
 
+nav a {
+text-decoration: none; color:#000;
+}
 
-/*Title*/
+/*Text==================================*/
 body h1{
     color: #2D1313;
     font-size: 80px;
@@ -51,51 +54,50 @@ p {
     font-family: "Aoboshi One", serif;
 }
 
-/*About*/
-.about {
-  position:relative;
-  width: 700px;
-  min-height: 60px;
-  padding-top:15px;
+/*Home=================================*/
+
+.index {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
+.index p {
+  background: var(--dark_green);
+    color: var(--dark_brown);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*About================================*/
 .about p {
  background: var(--dark_green);
     color: white;
-    padding: 14px;
-    margin: 20px;
-    float:left; display:inline; width: 49%
+    padding: 20px;
+    margin: 30px;
 }
 
-.about 
+.AboutBox {
+  padding: 20px 40px 40px;
+  display: flex;
+}
 
+.about h1 {
+  text-align: right;
+}
 
-/*Page Portfolio/Classwork*/
+/*Page Portfolio/Classwork==================*/
 .container {
   text-align: center;
   left: 0;
   right: 0;
-  
- }
+  display: grid;
+  padding: 10px;
+  }
 
-.classwork {
-  position:relative;
-  width: 300px;
-  min-height: 60px;
-  margin: auto;
-  padding-top:15px;
-}
-
-.classwork:before {
-  content:'';
-  position: absolute;
-  width: 220px;
-  height: 140px;
-  margin: auto;
-  z-index: -1;;
-  left:40px;
-}
-
-.classbox {
+  .classbox {
   height: 25px;
   padding: 0px; /* space inside the box */
   margin: 36px;  /* space outside the box */
@@ -110,18 +112,18 @@ p {
 
 .portfoliobox {
   height: 25px;
-  padding: 0; /* space inside the box */
-  margin: 36px;  /* space outside the box */
+  padding: 0;
+  margin: 36px;  
   background-color: var(--dark_green);
   color: var(--dark_brown);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-sizing: content-box; /* or border-box */
+  box-sizing: content-box;
 }
 
-/*Footer*/
+/*Footer==========================*/
 
 footer {
     text-decoration: none;
@@ -142,10 +144,13 @@ footer p {
   float: left;
 }
 
-/*Background Color*/
+/*Background Color====================*/
 
 html{
   background-color: var(--light_green);
 }
 
 /*CSS Comment*/
+
+/* padding: space inside the box */
+/* margin: space outside the box */
