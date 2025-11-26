@@ -84,8 +84,15 @@ p {
   display: flex;
 }
 
+.AboutColumn {
+  display: flex;
+  flex-direction: column;
+}
+
 .about h1 {
   text-align: right;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*Page Portfolio/Classwork==================*/
